@@ -20,6 +20,14 @@ fs.writeFile("./test.txt", "Ram Ram", (err) => {})
 
 // blocking operation:
 // read contact.txt file
+// code executes top to bottom
+// by default thread size = 4 , size can be increased but max ?
+// max - depends on the number of cpu cores
 
-const result = fs.readFileSync("contact.txt", "utf-8");
-console.log(result);
+// non-blocking :
+
+console.log("1");
+fs.readFile("contact.txt", "utf-8", (err, result) => {
+    console.log(result);
+})
+console.log("2");
