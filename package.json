@@ -2,11 +2,14 @@
   "name": "nodejs-prac",
   "version": "1.0.0",
   "description": "nodejs-revision - notes &amp; codes",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
