@@ -3,3 +3,30 @@
 1744184492222 : New Req Recieved 
 1744184492394 : New Req Recieved 
 1744185941210 : New Req Recieved 
+
+=> Versions : 
+eg. 4.18.3 
+1st part  = 4
+2nd part  = 18
+3rd part = 3
+if there is a major change done then versioning should 
+be changed in 2nd part.
+
+// 3rd part - Minor fixes
+Latest => 4.18.5
+
+// 2nd part => Recommended bug fix (security)
+=> Latest : 4.19.1
+
+// 1st part  => Major/Breaking Update
+=> Latest : 5
+
+^Carrot symbol => ^4.18.7 
+here 4 will not change but minor updates can be changed.
+or 4 is locked for now.
+
+~ symbol : does not allow to change Recommended version ,
+only minor fix to be changed.
+
+
+ 
