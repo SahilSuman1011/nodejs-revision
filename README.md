@@ -32,7 +32,7 @@ fs.readFile("contact.txt", "utf-8", (err, result) => {
 })
 console.log("2");`
 
-#RESTful API :
+##RESTful API :
 ![alt text](image.png)
 
-##Else things are in the respective ccode files. 
+##Else things are in the respective code files. 
