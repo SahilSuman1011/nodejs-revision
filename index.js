@@ -22,6 +22,8 @@ const PORT = 8000;
 
 //Routes
 app.get("/api/users", (req, res) => {
+    const body = req.body;
+    console.log("Body:", body);
     return res.json(users);
 })
 
@@ -35,6 +37,15 @@ app.get("/users", (req,res) => {
 })
 
 
+//Middlewares
+
+app.use(express.urlencoded({extended: false}))
+app.use((res, req, next) => {
+    console.log("Hello from middleware");
+    next();
+});
+
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
 });
+
